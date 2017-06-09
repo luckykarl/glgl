@@ -142,7 +142,8 @@ public class MeActivity extends BaseActivity {
                 startActivityForNoResult(new Intent(getActivity(), FeedBackActivity.class).putExtra("IntentKey", IntentKey.FeedBack));
                 break;
             case R.id.rel_about:
-                startActivityForNoResult(new Intent(getActivity(), AboutActivity.class));
+//                startActivityForNoResult(new Intent(getActivity(), AboutActivity.class));
+                startActivityForNoResult(new Intent(getActivity(), FeedBackActivity.class).putExtra("IntentKey", IntentKey.About));
                 break;
             case R.id.btn_promote:
                 int status = userInfo.getUpgrade_botton_status();

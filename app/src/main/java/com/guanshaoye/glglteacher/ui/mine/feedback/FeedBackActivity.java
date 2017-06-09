@@ -43,7 +43,7 @@ public class FeedBackActivity extends BaseActivity implements OnClickItemListene
     @Override
     public void init() {
         setContentView(R.layout.feedback_layout);
-        normalTitle.setText("帮助和反馈");
+        normalTitle.setText("");
         initView();
     }
 
@@ -55,6 +55,9 @@ public class FeedBackActivity extends BaseActivity implements OnClickItemListene
             clickBtn.setVisibility(View.VISIBLE);
         }else if (key == IntentKey.Raiders){
             normalTitle.setText("攻略");
+            clickBtn.setVisibility(View.GONE);
+        }else if (key == IntentKey.About){
+            normalTitle.setText("关于");
             clickBtn.setVisibility(View.GONE);
         }
 

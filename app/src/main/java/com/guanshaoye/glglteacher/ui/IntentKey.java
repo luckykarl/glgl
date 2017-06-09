@@ -7,4 +7,5 @@ package com.guanshaoye.glglteacher.ui;
 public class IntentKey {
     public static int FeedBack = 3;  //帮助
     public static int Raiders = 5;  //攻略
+    public static int About = 6;  //关于
 }
