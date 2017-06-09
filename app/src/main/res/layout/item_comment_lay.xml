@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/x23"
+        android:paddingRight="@dimen/x23">
+
+
+        <com.guanshaoye.mylibrary.view.CircleImg
+            android:id="@+id/photo_img"
+            android:layout_width="@dimen/x60"
+            android:layout_height="@dimen/x60"
+            android:src="@drawable/default_head_icon" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/x60"
+            android:layout_marginLeft="@dimen/x23"
+            android:layout_toRightOf="@+id/photo_img"
+            android:gravity="center_vertical"
+            android:text="Karl"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/x27"
+            android:textStyle="bold" />
+
+        <com.guanshaoye.glglteacher.utils.view.RatingBar
+            android:id="@+id/rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_name"
+            android:layout_below="@+id/tv_name"
+            android:layout_marginTop="@dimen/x30"
+            app:starCount="5"
+            app:starEmpty="@mipmap/star_grey"
+            app:starFill="@mipmap/star_red"
+            app:starImageSize="@dimen/x10"
+            app:starPadding="@dimen/x6"
+            app:starStep="2"
+            app:stepSize="Full" />
+
+        <com.guanshaoye.glglteacher.utils.view.FlowTagLayout
+            android:id="@+id/tagview_hoat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_name"
+            android:layout_below="@+id/rb"
+            android:layout_marginTop="@dimen/x14" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/x20"
+            android:layout_marginTop="@dimen/x20"
+            android:layout_alignLeft="@+id/tv_name"
+            android:layout_below="@+id/tagview_hoat" />
+
+
+    </RelativeLayout>
+
+    <View style="@style/divider" />
+</LinearLayout>

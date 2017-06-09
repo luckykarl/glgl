@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/appoint_course_bg">
+
+        <TextView
+            android:id="@+id/tv_alert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/x100"
+            android:text="温馨提示"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/x29"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_alert_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_alert"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/x10"
+            android:text=""
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/x23"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/dialog_top_bg"></RelativeLayout>
+
+    <TextView
+        android:id="@+id/btn_sure"
+        android:layout_width="@dimen/x200"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginTop="@dimen/y320"
+        android:background="@drawable/btn_sure_bg"
+        android:gravity="center"
+        android:text="确认"
+        android:textColor="@color/white"
+        android:textSize="@dimen/x23" />
+
+    <TextView
+        android:id="@+id/btn_cancel"
+        android:layout_width="@dimen/x200"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x40"
+        android:layout_marginTop="@dimen/y320"
+        android:layout_toRightOf="@+id/btn_sure"
+        android:background="@drawable/btn_sure_bg"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="@color/white"
+        android:textSize="@dimen/x23" />
+</RelativeLayout>

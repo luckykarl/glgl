@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item name="btn_top_left" type="id"/>
+    <item name="btn_top_right" type="id"/>
+    <item name="lay_top_title" type="id"/>
+    <item name="txt_top_title" type="id"/>
+    <item name="lay_content" type="id"/>
+    <item name="imageview_icon" type="id"/>
+    <item name="imageview_next" type="id"/>
+    <item name="main_tool_text" type="id"/>
+    <item name="main_tool_lay" type="id"/>
+    <item name="xzhuang_list" type="id"/>
+    <item name="item_tag_viewhold" type="id"/>
+    <item name="item_tag_object" type="id"/>
+    
+     <item name="normal_btn" type="id"/>
+    <!-- 原始textview -->
+    <item name="id_source_textview" type="id"></item>
+    <!-- 收起展开按钮textview -->
+    <item name="id_expand_textview" type="id"></item>
+
+    <item name="guide_container" type="id"/>
+    <item name="f_content" type="id"/>
+    <item name="tag_imageview_url" type="id" />
+</resources>

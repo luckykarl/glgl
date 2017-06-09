@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/whole_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/vie_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/x23">
+
+
+        <com.guanshaoye.mylibrary.view.CircleImg
+            android:id="@+id/img_icon"
+            android:layout_width="@dimen/x100"
+            android:layout_height="@dimen/x100"
+            android:src="@drawable/beauty2_icon" />
+
+        <TextView
+            android:id="@+id/title_txt"
+            style="@style/item_black_bold_text"
+            android:layout_toRightOf="@+id/img_icon"
+            android:text="江桥万达店"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/x27" />
+
+
+        <TextView
+            android:id="@+id/content_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/title_txt"
+            android:layout_below="@+id/title_txt"
+            android:layout_marginTop="@dimen/x18"
+            android:text=""
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/x19" />
+
+        <TextView
+            android:id="@+id/red_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/content_txt"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/red_cir"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x20"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/title_txt"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/x17" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,1 @@
+include ':app', ':mylibrary', ':calendarlibrary', ':Gallery', ':timeselector', ':pickerview'

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/normal_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9.2"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/rel_project"
+                style="@style/personal_info_rel">
+
+                <TextView
+                    style="@style/personal_left_txt"
+                    android:text="项目" />
+
+                <TextView
+                    android:id="@+id/tv_project"
+                    style="@style/personal_right_txt"
+                    android:layout_toLeftOf="@+id/arrow1"
+                    android:text="未填" />
+
+                <ImageView
+                    android:id="@+id/arrow1"
+                    style="@style/personal_right_arrow" />
+            </RelativeLayout>
+
+            <View style="@style/divider" />
+
+            <RelativeLayout
+                android:id="@+id/rel_course"
+                style="@style/personal_info_rel">
+
+                <TextView
+                    style="@style/personal_left_txt"
+                    android:text="课程" />
+
+                <TextView
+                    android:id="@+id/tv_course"
+                    style="@style/personal_right_txt"
+                    android:layout_toLeftOf="@+id/arrow2"
+                    android:text="未填" />
+
+                <ImageView
+                    android:id="@+id/arrow2"
+                    style="@style/personal_right_arrow" />
+            </RelativeLayout>
+
+
+            <RelativeLayout style="@style/personal_info_rel"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="审核进度"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/x23" />
+
+                <ImageView
+                    android:id="@+id/img_audit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/auditing_icon" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x23"
+                android:background="#ededed" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/x23"
+                android:text="视频"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/x27"
+                android:textStyle="bold" />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x23" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/x23"
+                android:text="赛事"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/x27"
+                android:textStyle="bold" />
+
+            <com.guanshaoye.glglteacher.utils.view.MyGridView
+                android:id="@+id/gridsaishi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/x23"
+                android:layout_marginRight="@dimen/x23"
+                android:columnCount="1"
+                android:numColumns="4"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/x23"
+                android:layout_marginLeft="@dimen/x23"
+                android:text="证书"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/x27"
+                android:textStyle="bold" />
+
+            <com.guanshaoye.glglteacher.utils.view.MyGridView
+                android:id="@+id/gridzhengshu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/x23"
+                android:layout_marginRight="@dimen/x23"
+                android:columnCount="1"
+                android:numColumns="4"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth" />
+
+            <TextView
+                android:id="@+id/submit_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/x15"
+                android:layout_marginLeft="@dimen/x23"
+                android:layout_marginRight="@dimen/x23"
+                android:layout_marginTop="@dimen/x50"
+                android:layout_weight="0.7"
+                android:background="@drawable/login_btn"
+                android:gravity="center"
+                android:text="确定提交"
+                android:textColor="@color/white"
+                android:textSize="@dimen/x27" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

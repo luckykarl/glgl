@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x130"
+    android:background="@drawable/rec_top_bg">
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:onClick="back"
+        android:paddingLeft="@dimen/x40"
+        android:paddingRight="@dimen/x40"
+        android:src="@drawable/back"/>
+    <TextView
+        android:id="@+id/normal_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="@dimen/x25"/>
+    <ImageView
+        android:id="@+id/right_function_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="@dimen/x30"
+        android:paddingRight="@dimen/x40"
+        android:visibility="gone"
+        android:src="@drawable/function_icon"/>
+
+    <TextView
+        android:id="@+id/sure_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="@dimen/x30"
+        android:paddingRight="@dimen/x40"
+        android:visibility="gone"
+        android:gravity="center"
+        android:text="@string/sure_txt"
+        android:textColor="@color/white"
+        android:textSize="@dimen/x30"
+        />
+</RelativeLayout>

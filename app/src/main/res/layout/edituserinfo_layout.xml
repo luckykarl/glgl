@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/normal_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x140"
+                android:background="@color/white"
+                android:padding="@dimen/x23">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="头像"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/x29" />
+
+                <com.guanshaoye.mylibrary.view.CircleImg
+                    android:id="@+id/photo_img"
+                    android:layout_width="@dimen/x90"
+                    android:layout_height="@dimen/x90"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/head_icon" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x23"
+                android:background="#ededed" />
+
+            <RelativeLayout
+                android:id="@+id/tv_name_lay"
+                style="@style/personal_info_rel">
+
+                <TextView
+                    style="@style/personal_left_txt"
+                    android:text="@string/name_txt" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    style="@style/personal_right_txt"
+                    android:layout_toLeftOf="@+id/arrow1"
+                    android:hint="未填" />
+
+                <ImageView
+                    android:id="@+id/arrow1"
+                    style="@style/personal_right_arrow" />
+            </RelativeLayout>
+
+            <View style="@style/divider" />
+
+            <RelativeLayout
+                android:id="@+id/tv_sex_lay"
+                style="@style/personal_info_rel">
+
+                <TextView
+                    style="@style/personal_left_txt"
+                    android:text="@string/gender_txt" />
+
+                <TextView
+                    android:id="@+id/tv_sex"
+                    style="@style/personal_right_txt"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="13dp"
+                    android:layout_marginRight="13dp"
+                    android:layout_toLeftOf="@+id/arrow2"
+                    android:layout_toStartOf="@+id/arrow2"
+                    android:hint="未填" />
+
+                <ImageView
+                    android:id="@+id/arrow2"
+                    style="@style/personal_right_arrow" />
+            </RelativeLayout>
+
+            <View style="@style/divider" />
+
+            <RelativeLayout
+                android:id="@+id/tv_job_lay"
+                style="@style/personal_info_rel">
+
+                <TextView
+                    style="@style/personal_left_txt"
+                    android:text="@string/position_txt" />
+
+                <TextView
+                    android:id="@+id/tv_job"
+                    style="@style/personal_right_txt"
+                    android:layout_toLeftOf="@+id/arrow3"
+                    />
+
+                <ImageView
+                    android:id="@+id/arrow3"
+                    style="@style/personal_right_arrow" />
+            </RelativeLayout>
+
+            <View style="@style/divider" />
+
+            <RelativeLayout
+                android:id="@+id/tv_tel_lay"
+                style="@style/personal_info_rel">
+
+                <TextView
+                    style="@style/personal_left_txt"
+                    android:text="@string/contact_txt" />
+
+                <TextView
+                    android:id="@+id/tv_tel"
+                    style="@style/personal_right_txt"
+                    android:layout_toLeftOf="@+id/arrow4" />
+
+                <ImageView
+                    android:id="@+id/arrow4"
+                    style="@style/personal_right_arrow" />
+            </RelativeLayout>
+
+            <View style="@style/divider" />
+
+            <RelativeLayout
+                android:id="@+id/tv_mail_lay"
+                style="@style/personal_info_rel">
+
+                <TextView
+                    style="@style/personal_left_txt"
+                    android:text="@string/mail_txt" />
+
+                <TextView
+                    android:id="@+id/tv_mail"
+                    style="@style/personal_right_txt"
+                    android:layout_toLeftOf="@+id/arrow5"
+                    android:hint="未填" />
+
+                <ImageView
+                    android:id="@+id/arrow5"
+                    style="@style/personal_right_arrow" />
+            </RelativeLayout>
+
+            <View style="@style/divider" />
+
+            <RelativeLayout
+                android:id="@+id/tv_live_address_lay"
+                style="@style/personal_info_rel">
+
+                <TextView
+                    style="@style/personal_left_txt"
+                    android:text="@string/live_address_txt" />
+
+                <TextView
+                    android:id="@+id/tv_live_address"
+                    style="@style/personal_right_txt"
+                    android:layout_toLeftOf="@+id/arrow6"
+                    android:hint="未填" />
+
+                <ImageView
+                    android:id="@+id/arrow6"
+                    style="@style/personal_right_arrow" />
+            </RelativeLayout>
+
+            <View style="@style/divider" />
+
+            <RelativeLayout
+                android:id="@+id/tv_urgent_person_lay"
+                style="@style/personal_info_rel">
+
+                <TextView
+                    style="@style/personal_left_txt"
+                    android:text="@string/emergency_contact_txt" />
+
+                <TextView
+                    android:id="@+id/tv_urgent_person"
+                    style="@style/personal_right_txt"
+                    android:layout_toLeftOf="@+id/arrow7"
+                    android:hint="未填" />
+
+                <ImageView
+                    android:id="@+id/arrow7"
+                    style="@style/personal_right_arrow" />
+            </RelativeLayout>
+
+            <View style="@style/divider" />
+
+            <RelativeLayout
+                android:id="@+id/tv_urgent_person_tel_lay"
+                style="@style/personal_info_rel">
+
+                <TextView
+                    style="@style/personal_left_txt"
+                    android:text="@string/emergency_contact_mode_txt" />
+
+                <TextView
+                    android:id="@+id/tv_urgent_person_tel"
+                    style="@style/personal_right_txt"
+                    android:layout_toLeftOf="@+id/arrow8"
+                    android:hint="未填" />
+
+                <ImageView
+                    android:id="@+id/arrow8"
+                    style="@style/personal_right_arrow" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x23"
+                android:background="#ededed" />
+
+            <RelativeLayout
+                android:id="@+id/tv_birthday_lay"
+                style="@style/personal_info_rel">
+
+                <TextView
+                    style="@style/personal_left_txt"
+                    android:text="@string/birthday_txt" />
+
+                <TextView
+                    android:id="@+id/tv_birthday"
+                    style="@style/personal_right_txt"
+                    android:layout_toLeftOf="@+id/arrow9"
+                    android:hint="未填" />
+
+                <ImageView
+                    android:id="@+id/arrow9"
+                    style="@style/personal_right_arrow" />
+            </RelativeLayout>
+
+            <View style="@style/divider" />
+
+            <RelativeLayout
+                android:id="@+id/tv_native_place_lay"
+                style="@style/personal_info_rel">
+
+                <TextView
+                    style="@style/personal_left_txt"
+                    android:text="@string/palce_of_orign_txt" />
+
+                <TextView
+                    android:id="@+id/tv_native_place"
+                    style="@style/personal_right_txt"
+                    android:layout_toLeftOf="@+id/arrow10"
+                    android:hint="未填" />
+
+                <ImageView
+                    android:id="@+id/arrow10"
+                    style="@style/personal_right_arrow" />
+            </RelativeLayout>
+
+            <View style="@style/divider" />
+
+            <RelativeLayout
+                android:id="@+id/tv_nation_lay"
+                style="@style/personal_info_rel">
+
+                <TextView
+                    style="@style/personal_left_txt"
+                    android:text="@string/nation_txt" />
+
+                <TextView
+                    android:id="@+id/tv_nation"
+                    style="@style/personal_right_txt"
+                    android:layout_toLeftOf="@+id/arrow11"
+                    android:hint="未填" />
+
+                <ImageView
+                    android:id="@+id/arrow11"
+                    style="@style/personal_right_arrow" />
+            </RelativeLayout>
+
+            <View style="@style/divider" />
+
+            <RelativeLayout
+                android:id="@+id/tv_id_card_lay"
+                style="@style/personal_info_rel">
+
+                <TextView
+                    style="@style/personal_left_txt"
+                    android:text="@string/id_txt" />
+
+                <TextView
+                    android:id="@+id/tv_id_card"
+                    style="@style/personal_right_txt"
+                    android:layout_toLeftOf="@+id/arrow12"
+                    android:hint="未填" />
+
+                <ImageView
+                    android:id="@+id/arrow12"
+                    style="@style/personal_right_arrow" />
+            </RelativeLayout>
+
+            <View style="@style/divider" />
+
+            <RelativeLayout
+                android:id="@+id/tv_marriage_condition_lay"
+                style="@style/personal_info_rel">
+
+                <TextView
+                    style="@style/personal_left_txt"
+                    android:text="@string/marital_status_txt" />
+
+                <TextView
+                    android:id="@+id/tv_marriage_condition"
+                    style="@style/personal_right_txt"
+                    android:layout_toLeftOf="@+id/arrow13"
+                    android:hint="未填" />
+
+                <ImageView
+                    android:id="@+id/arrow13"
+                    style="@style/personal_right_arrow" />
+            </RelativeLayout>
+
+            <View style="@style/divider" />
+
+            <RelativeLayout
+                android:id="@+id/tv_have_children_lay"
+                style="@style/personal_info_rel">
+
+                <TextView
+                    style="@style/personal_left_txt"
+                    android:text="@string/children_txt" />
+
+                <TextView
+                    android:id="@+id/tv_have_children"
+                    style="@style/personal_right_txt"
+                    android:layout_toLeftOf="@+id/arrow15"
+                    android:hint="未填" />
+
+                <ImageView
+                    android:id="@+id/arrow15"
+                    style="@style/personal_right_arrow" />
+            </RelativeLayout>
+
+            <View style="@style/divider" />
+
+            <RelativeLayout
+                android:id="@+id/tv_family_address_lay"
+                style="@style/personal_info_rel">
+
+                <TextView
+                    style="@style/personal_left_txt"
+                    android:text="@string/home_address_txt" />
+
+                <TextView
+                    android:id="@+id/tv_family_address"
+                    style="@style/personal_right_txt"
+                    android:layout_toLeftOf="@+id/arrow14"
+                    android:hint="未填" />
+
+                <ImageView
+                    android:id="@+id/arrow14"
+                    style="@style/personal_right_arrow" />
+            </RelativeLayout>
+
+            <View style="@style/divider" />
+
+            <RelativeLayout
+                android:id="@+id/tv_education_lay"
+                style="@style/personal_info_rel">
+
+                <TextView
+                    style="@style/personal_left_txt"
+                    android:text="@string/education_txt" />
+
+                <TextView
+                    android:id="@+id/tv_education"
+                    style="@style/personal_right_txt"
+                    android:layout_toLeftOf="@+id/arrow16"
+                    android:hint="未填" />
+
+                <ImageView
+                    android:id="@+id/arrow16"
+                    style="@style/personal_right_arrow" />
+            </RelativeLayout>
+
+            <View style="@style/divider" />
+
+            <RelativeLayout
+                android:id="@+id/tv_graduate_school_lay"
+                style="@style/personal_info_rel">
+
+                <TextView
+                    style="@style/personal_left_txt"
+                    android:text="@string/graduation_school_txt" />
+
+                <TextView
+                    android:id="@+id/tv_graduate_school"
+                    style="@style/personal_right_txt"
+                    android:layout_toLeftOf="@+id/arrow17"
+                    android:hint="未填" />
+
+                <ImageView
+                    android:id="@+id/arrow17"
+                    style="@style/personal_right_arrow" />
+            </RelativeLayout>
+
+            <View style="@style/divider" />
+
+            <RelativeLayout
+                android:id="@+id/tv_graduate_date_lay"
+                style="@style/personal_info_rel">
+
+                <TextView
+                    style="@style/personal_left_txt"
+                    android:text="@string/graduation_time_txt" />
+
+                <TextView
+                    android:id="@+id/tv_graduate_date"
+                    style="@style/personal_right_txt"
+                    android:layout_toLeftOf="@+id/arrow18"
+                    android:hint="未填" />
+
+                <ImageView
+                    android:id="@+id/arrow18"
+                    style="@style/personal_right_arrow" />
+            </RelativeLayout>
+
+            <View style="@style/divider" />
+
+            <RelativeLayout
+                android:id="@+id/tv_arrive_job_date_lay"
+                style="@style/personal_info_rel">
+
+                <TextView
+                    style="@style/personal_left_txt"
+                    android:text="@string/induation_time_txt" />
+
+                <TextView
+                    android:id="@+id/tv_arrive_job_date"
+                    style="@style/personal_right_txt"
+                    android:layout_toLeftOf="@+id/arrow19"
+                    android:hint="未填" />
+
+                <ImageView
+                    android:id="@+id/arrow19"
+                    style="@style/personal_right_arrow" />
+            </RelativeLayout>
+
+            <View style="@style/divider" />
+            <TextView
+                android:id="@+id/submit_btn"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="@dimen/x15"
+                android:layout_marginLeft="@dimen/x23"
+                android:layout_marginRight="@dimen/x23"
+                android:layout_marginTop="@dimen/x50"
+                android:layout_weight="0.7"
+                android:background="@drawable/login_btn"
+                android:gravity="center"
+                android:text="下一步"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:textSize="@dimen/x27" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

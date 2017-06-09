@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="@dimen/x1"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/x23">
+
+        <ImageView
+            android:id="@+id/img_teacher_head"
+            android:layout_width="@dimen/x100"
+            android:layout_height="@dimen/x100"
+            android:src="@drawable/beauty_head_icon"/>
+
+        <TextView
+            android:id="@+id/tv_store_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x23"
+            android:layout_marginTop="@dimen/x10"
+            android:layout_toRightOf="@+id/img_teacher_head"
+            android:text="江桥万达店"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/x27"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_store_name"
+            android:layout_below="@+id/tv_store_name"
+            android:layout_marginTop="@dimen/x10"
+            android:text="门店盈利10000"
+            android:textColor="@color/red"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_bonus_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="100"
+            android:textColor="@color/red"
+            android:textSize="@dimen/x23"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/img_rmb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x15"
+            android:layout_toLeftOf="@+id/tv_bonus_value"
+            android:src="@drawable/rmb_icon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x15"
+            android:layout_toLeftOf="@id/img_rmb"
+            android:text="获得分红"
+            android:textColor="@color/red"
+            android:textSize="@dimen/x23"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+</LinearLayout>

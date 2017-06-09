@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/normal_title"/>
+    <FrameLayout
+        android:id="@id/lay_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <com.guanshaoye.glglteacher.utils.view.BottomTabBar
+            android:id="@+id/tb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:backgroundColor="@color/white"
+            app:textColor="@color/text_color"
+            app:textSelectColor="@color/green" />
+
+
+    </FrameLayout>
+</LinearLayout>

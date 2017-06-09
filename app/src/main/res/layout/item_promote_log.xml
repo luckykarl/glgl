@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/x12"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_common_shape"
+        android:padding="@dimen/x23">
+
+
+        <com.guanshaoye.mylibrary.view.CircleImg
+            android:id="@+id/photo_img"
+            android:layout_width="@dimen/x100"
+            android:layout_height="@dimen/x100"
+            android:src="@drawable/beauty2_icon" />
+
+        <LinearLayout
+            android:id="@+id/title_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x23"
+            android:layout_marginTop="@dimen/x20"
+            android:layout_toRightOf="@+id/photo_img"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="理论分"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/x23"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/theory_score_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x18"
+                    android:text="84"
+                    android:textColor="@color/red_item"
+                    android:textSize="@dimen/x23"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="技能分"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/x23"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/skill_score_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x18"
+                    android:text="84"
+                    android:textColor="@color/red_item"
+                    android:textSize="@dimen/x23"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_promote_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2017-05-16  18:30"
+                    android:textColor="@color/color_777777"
+                    android:textSize="@dimen/x17" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_start_rank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/title_lay"
+            android:layout_below="@+id/title_lay"
+            android:layout_marginTop="@dimen/x15"
+            android:text="3级"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/x23"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/img_transition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_start_rank"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_toRightOf="@id/tv_start_rank"
+            android:src="@drawable/transition_icon" />
+
+        <TextView
+            android:id="@+id/tv_end_rank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/img_transition"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_toRightOf="@+id/img_transition"
+            android:text="四级"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/x23"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/img_promote_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_start_rank"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x20"
+            android:layout_toLeftOf="@+id/tv_promote_status"
+            android:background="@drawable/promote_success_icon" />
+
+        <TextView
+            android:id="@+id/tv_promote_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_start_rank"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/title_lay"
+            android:gravity="bottom"
+            android:text="晋级成功"
+            android:textColor="@color/green"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</LinearLayout>

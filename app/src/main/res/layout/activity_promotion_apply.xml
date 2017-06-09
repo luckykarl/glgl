@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/top_rel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x130"
+        android:background="@drawable/rec_top_bg">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:onClick="back"
+            android:paddingLeft="@dimen/x40"
+            android:paddingRight="@dimen/x40"
+            android:src="@drawable/back"/>
+        <TextView
+            android:id="@+id/normal_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/x25"/>
+       <TextView
+           android:id="@+id/btn_promote_log"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="@dimen/x23"
+           android:textColor="@color/white"
+           android:layout_centerVertical="true"
+           android:layout_alignParentRight="true"
+           android:background="@drawable/btn_promotion_log"
+           android:alpha="27"
+           android:paddingLeft="@dimen/x15"
+           android:paddingRight="@dimen/x15"
+           android:paddingBottom="@dimen/x10"
+           android:paddingTop="@dimen/x10"
+           android:text="晋级记录"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/top_rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/promotion_apply_bg"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/promotion_apply_middle_bg"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="晋级费"
+                android:textColor="@color/white"
+                android:textSize="@dimen/x29"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x20"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/white_rmb_icon"/>
+
+                <TextView
+                    android:id="@+id/btn_promote_fee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:text="0000"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/x58"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+  <TextView
+      android:id="@+id/btn_sure_submit"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="确定提交"
+      android:gravity="center"
+      android:textSize="@dimen/x23"
+      android:textColor="@color/white"
+      android:layout_alignParentBottom="true"
+      android:layout_marginLeft="@dimen/x23"
+      android:layout_marginRight="@dimen/x23"
+      android:layout_marginBottom="@dimen/x23"
+      android:background="@drawable/login_btn"/>
+</RelativeLayout>

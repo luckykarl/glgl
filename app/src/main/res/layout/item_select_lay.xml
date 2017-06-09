@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/click_lay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x100">
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x23"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_marginRight="@dimen/x10"
+            android:layout_toLeftOf="@+id/img_about"
+            android:text="怎么"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/x24" />
+        <ImageView
+            android:id="@+id/img_about"
+            style="@style/me_right_arrow"
+            android:layout_marginRight="@dimen/x23"
+            android:src="@drawable/right_arrow_icon" />
+
+    </RelativeLayout>
+
+    <View style="@style/divider" />
+</LinearLayout>

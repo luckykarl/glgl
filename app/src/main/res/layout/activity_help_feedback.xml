@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/whole_bg"
+              android:orientation="vertical">
+    <include layout="@layout/normal_title"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x300"
+        android:layout_margin="@dimen/x23"
+        android:padding="@dimen/x23"
+        android:background="@drawable/item_common_shape">
+        <ImageView
+            android:id="@+id/img_edit_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x10"
+            android:src="@drawable/edit_icon"/>
+        <EditText
+            android:id="@+id/edit_feedBack"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x500"
+            android:layout_toRightOf="@+id/img_edit_icon"
+            android:hint="说点什么吧..."
+            android:gravity="top"
+            android:padding="@dimen/x10"
+            android:layout_marginLeft="@dimen/x10"
+            android:textSize="@dimen/x24"
+            android:textColor="#b8b8b8"
+            android:background="@null"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/btn_sure_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x23"
+        android:layout_marginRight="@dimen/x23"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="确定提交"
+        android:textSize="@dimen/x23"
+        android:layout_marginTop="@dimen/x40"
+        android:background="@drawable/login_btn"/>
+</LinearLayout>

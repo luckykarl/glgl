@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_lay"
+        layout="@layout/normal_title" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_lay"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/rel_project"
+            style="@style/personal_info_rel">
+
+            <TextView
+                style="@style/personal_left_txt"
+                android:text="项目" />
+
+            <TextView
+                android:id="@+id/tv_project"
+                style="@style/personal_right_txt"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <View style="@style/divider" />
+
+        <RelativeLayout
+            android:id="@+id/rel_course"
+            style="@style/personal_info_rel">
+
+            <TextView
+                android:id="@+id/textView"
+                style="@style/personal_left_txt"
+                android:text="课程" />
+
+            <TextView
+                android:id="@+id/tv_course"
+                style="@style/personal_right_txt"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+
+        <View style="@style/divider" />
+        <RelativeLayout style="@style/personal_info_rel">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="认证状态"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/x23" />
+
+            <ImageView
+                android:id="@+id/img_audit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/x23"
+                />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x23"
+            android:background="#ededed" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x23"
+            android:layout_marginTop="@dimen/x23"
+            android:text="审核描述"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/x24" />
+
+
+        <TextView
+            android:id="@+id/tv_info"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x257"
+            android:layout_margin="@dimen/x23"
+            android:background="@drawable/shape_text_line"
+            android:gravity="left|top" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/submit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/x15"
+        android:layout_marginLeft="@dimen/x23"
+        android:layout_marginRight="@dimen/x23"
+        android:layout_marginTop="@dimen/x50"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="0.7"
+        android:background="@drawable/login_btn"
+        android:gravity="center"
+        android:text="重新审核"
+        android:textColor="@color/white"
+        android:textSize="@dimen/x27"
+        android:visibility="gone"/>
+</RelativeLayout>

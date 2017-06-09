@@ -1,0 +1,114 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.guanshaoye.glglteacher">
+
+
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <!-- 允许装入和卸载文件系统的移动存储 -->
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- 往sdcard中写入数据的权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 在sdcard中创建/删除文件的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 用于读取手机当前的状态-->
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application android:allowBackup="true"
+        android:label="@string/app_name"
+        android:icon="@mipmap/app_luncher"
+        android:supportsRtl="true"
+        android:name=".ui.GlGlApplication"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon,android:theme">
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.guanshaoye.glglteacher.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
+       <activity android:name=".ui.WelcomeActivity">
+           <intent-filter>
+               <action android:name="android.intent.action.MAIN"/>
+               <category android:name="android.intent.category.LAUNCHER"/>
+           </intent-filter>
+       </activity>
+        <activity android:name=".ui.login.LoginActivity"/>
+
+        <activity android:name=".ui.MainActivity"
+            android:launchMode="singleTask"/>
+        <activity android:name=".ui.mine.MeActivity"/>
+        <activity android:name=".ui.mine.EditUserInfoActivity"/> //个人信息
+        <activity android:name=".ui.mine.tactless.RobClassActivity"/>  //抢课
+        <activity android:name=".ui.mine.promotion.PromotionApplyActivity"/> //晋级申请
+        <activity android:name=".ui.mine.promotion.PromotionLogActivity"/> //晋级记录
+        <activity android:name=".ui.mine.UserCommentListActitvity"/> //用户评级记录
+        <activity android:name=".ui.mine.bonus.BonusLogActivity"/>
+        <activity android:name=".ui.mine.bonus.SalaryLogActivity"/>
+        <activity android:name=".ui.mine.tactless.TakeClassLogActivity"/> //上课记录
+        <activity android:name=".ui.mine.setting.SettingActivity"/> //设置
+        <activity android:name=".ui.mine.about.AboutActivity"/> //关于
+        <activity android:name=".EditNormalActivity"/> //通用编辑页面
+        <activity android:name=".ui.mine.timetable.TimeTabeleActivity"/>  //时间表
+
+
+        <activity android:name=".ui.manager.WorkManageActivity"/> //工作管理
+        //上课签到
+        <activity android:name=".ui.manager.attendclass.AttendClassActivity"/> //上课签到
+        <activity android:name=".ui.manager.attendclass.ShowAttendClassActivity"/> //上课签到
+
+        //老师评级
+        <activity android:name=".ui.manager.teacher.TeacherReviewsActivity"/> //老师评价
+        <activity android:name=".ui.manager.teacher.ShowCommentActivity"/> //老师评价
+
+        //培训管理
+        <activity android:name=".ui.manager.train.TrainActivity"/> //培训管理
+        <activity android:name=".ui.manager.train.ShowTrainActivity"/> //培训管理签到
+
+
+        <activity android:name=".ui.authentication.AuthenticationAvtivity"/> //认证信息
+        <activity android:name=".ui.authentication.SelectListActivity"/> //认证信息选择项目
+        <activity android:name=".ui.authentication.ShowAuthStatusActivity"/> //认证信息
+
+        <activity android:name=".ui.message.MessageActivity"/> //消息
+        <activity android:name=".ui.message.ShowMsgActivity"/> //消息详情
+
+
+        <activity android:name=".ui.mine.feedback.FeedBackActivity"/>  //帮助和反馈
+        <activity android:name=".ui.mine.feedback.FeedSubmitActivity"/>
+        <activity android:name=".ui.mine.feedback.WebViewActivity"/>
+        <!-- 引导页 -->
+        <activity
+            android:name=".ui.ExampleGuideActivity" />
+        <service android:name=".service.UpdateService" android:enabled="true" android:process=":remote"/>
+        <receiver
+            android:name="com.guanshaoye.glglteacher.jpush.MyReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_CLICK_ACTION" />
+                <action android:name="cn.jpush.android.intent.CONNECTION" />
+                <category android:name="com.guanshaoye.glglteacher" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

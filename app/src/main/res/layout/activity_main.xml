@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.guanshaoye.glglteacher.utils.view.pullrefreshview.AbPullToRefreshView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/refreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x120"
+                android:background="@drawable/rec_top_bg"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/logo_icon" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x460">
+
+                <com.guanshaoye.glglteacher.utils.view.MyPagerGalleryView
+                    android:id="@+id/adgallery"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true" />
+
+                <LinearLayout
+                    android:id="@+id/ovalLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dip"
+                    android:layout_alignBottom="@+id/adgallery"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="10dp"
+                    android:background="#00FFFFFF"
+                    android:gravity="center"
+                    android:orientation="horizontal" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/msg_lay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x135"
+                android:background="@color/white"
+                android:padding="@dimen/x23">
+
+                <ImageView
+                    android:id="@+id/img_new_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/new_message_icon" />
+
+                <ImageView
+                    android:id="@+id/img_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:layout_toRightOf="@+id/img_new_message"
+                    android:src="@drawable/triangle_icon" />
+
+
+                <FrameLayout
+                    android:id="@+id/fragmen_lay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@+id/btn_more_message"
+                    android:layout_toRightOf="@+id/img_arrow"
+                    android:layout_marginLeft="@dimen/x23"
+                    android:layout_marginRight="@dimen/x23"/>
+
+
+                <ImageView
+                    android:id="@+id/btn_more_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/x10"
+                    android:src="@drawable/next_icon" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x23"
+                android:background="@color/whole_bg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/btn_rob_class"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x365"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/home_rob_selector" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/btn_work"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/x180"
+                            android:layout_marginLeft="@dimen/x5"
+                            android:layout_weight="1"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/home_work_selector" />
+
+                        <ImageView
+                            android:id="@+id/btn_course"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/x180"
+                            android:layout_marginLeft="@dimen/x5"
+                            android:layout_weight="1"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/home_course_selector" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/btn_manage"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/x180"
+                            android:layout_marginLeft="@dimen/x5"
+                            android:layout_marginTop="@dimen/x5"
+                            android:layout_weight="1"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/home_manage_selector" />
+
+                        <ImageView
+                            android:id="@+id/btn_mine"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/x180"
+                            android:layout_marginLeft="@dimen/x5"
+                            android:layout_marginTop="@dimen/x5"
+                            android:layout_weight="1"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/home_mine_selector" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</com.guanshaoye.glglteacher.utils.view.pullrefreshview.AbPullToRefreshView>

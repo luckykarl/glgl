@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">SPG教练版</string>
+    <string name="phone_hint">请输入您的手机号</string>
+    <string name="phone_txt_tip">手机格式不正确!</string>
+    <string name="code_hint">请输入验证码</string>
+    <string name="send_code">获取验证码</string>
+    <string name="login_txt">登录</string>
+    <string name="loading_txt">加载中...</string>
+    <string name="sure_txt">确定</string>
+    <string name="cancle_txt">取消</string>
+    <string name="name_txt">姓名</string>
+    <string name="gender_txt">性别</string>
+    <string name="position_txt">部门职位</string>
+    <string name="contact_txt">联系方式</string>
+    <string name="mail_txt">邮箱</string>
+    <string name="live_address_txt">居住地址</string>
+    <string name="emergency_contact_txt">紧急联系人</string>
+    <string name="emergency_contact_mode_txt">紧急联系人方式</string>
+    <string name="birthday_txt">生日</string>
+    <string name="palce_of_orign_txt">籍贯</string>
+    <string name="nation_txt">民族</string>
+    <string name="id_txt">身份证号</string>
+    <string name="marital_status_txt">婚姻状况</string>
+    <string name="children_txt">子女</string>
+    <string name="home_address_txt">家庭地址</string>
+    <string name="education_txt">学历</string>
+    <string name="graduation_school_txt">毕业学校</string>
+    <string name="graduation_time_txt">毕业日期</string>
+    <string name="induation_time_txt">入职日期</string>
+    <string name="empty_hint">请输入内容!</string>
+    <string name="my_timetable">我的课表</string>
+    <string name="grap_class">抢课</string>
+    <string name="grap_dialog_sure">您正在预约课程，确认提交?</string>
+    <string name="grap_dialog_cancle">是否取消此次抢课?</string>
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_footer_hint_normal">上拉查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+
+</resources>

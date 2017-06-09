@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/up_lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x50"
+        android:layout_marginRight="@dimen/x50"
+        android:background="@drawable/shape_white_item"
+        android:padding="@dimen/x20">
+
+        <TextView
+            android:id="@+id/txt_alert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x15"
+            android:layout_marginTop="@dimen/x50"
+            android:text="提示"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/x30" />
+
+        <RelativeLayout
+            android:id="@+id/rel_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_alert"
+            android:layout_marginTop="@dimen/x20"
+            android:layout_toRightOf="@+id/txt_alert">
+
+            <TextView
+                android:id="@+id/tv_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="版本:"
+                android:textColor="@color/text_color" />
+
+            <TextView
+                android:id="@+id/txt_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_toRightOf="@+id/tv_version"
+                android:textColor="@color/text_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_update_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/rel_version"
+            android:layout_below="@+id/rel_version"
+            android:layout_marginTop="@dimen/x20">
+
+            <TextView
+                android:id="@+id/tv_update_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="更新时间:"
+                android:textColor="@color/text_color" />
+
+            <TextView
+                android:id="@+id/txt_update_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_toRightOf="@+id/tv_update_time"
+                android:textColor="@color/text_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_alert"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginTop="@dimen/x20"
+            android:layout_toRightOf="@+id/rel_version">
+
+            <TextView
+                android:id="@+id/tv_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="大小:"
+                android:textColor="@color/text_color" />
+
+            <TextView
+                android:id="@+id/txt_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_toRightOf="@+id/tv_size"
+                android:textColor="@color/text_color" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_update_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/rel_update_time"
+            android:layout_below="@+id/rel_update_time"
+            android:layout_marginTop="@dimen/x30"
+            android:text="更新内容:"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/x35"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_update_content"
+            android:layout_width="@dimen/x400"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/rel_update_time"
+            android:layout_below="@+id/tv_update_content"
+            android:layout_marginTop="@dimen/x10"
+            android:lineSpacingExtra="@dimen/x8"
+            android:text=""
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/x24"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/btn_at_once_update"
+            android:layout_width="@dimen/x150"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_update_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/x50"
+            android:layout_marginTop="@dimen/x15"
+            android:background="@drawable/shape_white_line"
+            android:gravity="center"
+            android:paddingBottom="@dimen/x12"
+            android:paddingLeft="@dimen/x15"
+            android:paddingRight="@dimen/x15"
+            android:paddingTop="@dimen/x12"
+            android:text="立即更新"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x24" />
+    </RelativeLayout>
+
+
+</LinearLayout>
